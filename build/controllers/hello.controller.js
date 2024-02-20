@@ -48,28 +48,31 @@ var __setFunctionName = (this && this.__setFunctionName) || function (f, name, p
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.HelloController = void 0;
-const tsoa_1 = require("tsoa");
+const runtime_1 = require("@tsoa/runtime");
 let HelloController = (() => {
-    let _classDecorators = [(0, tsoa_1.Route)('hello')];
+    let _classDecorators = [(0, runtime_1.Route)('hello')];
     let _classDescriptor;
     let _classExtraInitializers = [];
     let _classThis;
+    let _classSuper = runtime_1.Controller;
     let _instanceExtraInitializers = [];
     let _sayHello_decorators;
-    var HelloController = _classThis = class {
+    var HelloController = _classThis = class extends _classSuper {
         sayHello() {
             return __awaiter(this, void 0, void 0, function* () {
-                return 'Hello, World!';
+                return 'Hello, TSOA!';
             });
         }
         constructor() {
+            super(...arguments);
             __runInitializers(this, _instanceExtraInitializers);
         }
     };
     __setFunctionName(_classThis, "HelloController");
     (() => {
-        const _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create(null) : void 0;
-        _sayHello_decorators = [(0, tsoa_1.Get)()];
+        var _a;
+        const _metadata = typeof Symbol === "function" && Symbol.metadata ? Object.create((_a = _classSuper[Symbol.metadata]) !== null && _a !== void 0 ? _a : null) : void 0;
+        _sayHello_decorators = [(0, runtime_1.Get)()];
         __esDecorate(_classThis, null, _sayHello_decorators, { kind: "method", name: "sayHello", static: false, private: false, access: { has: obj => "sayHello" in obj, get: obj => obj.sayHello }, metadata: _metadata }, null, _instanceExtraInitializers);
         __esDecorate(null, _classDescriptor = { value: _classThis }, _classDecorators, { kind: "class", name: _classThis.name, metadata: _metadata }, null, _classExtraInitializers);
         HelloController = _classThis = _classDescriptor.value;

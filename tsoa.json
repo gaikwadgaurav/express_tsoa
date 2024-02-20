@@ -1,14 +1,12 @@
 {
-    "routes": {
-      "controllers": ["./src/controllers/*.ts"],
-      "basePath": "/api"
-    },
-    "swagger": {
-      "outputDirectory": "./swagger-dist",
-      "entryFile": "./src/server.ts"
-    },
+    "entryFile": "src/index.ts",
+    "noImplicitAdditionalProperties": "throw-on-extras",
+    "controllerPathGlobs": ["src/**/*.controller.ts"],
     "spec": {
-        "entryFile": "./src/server.ts",
-        "outputDirectory": "./dist"
-      }
+      "outputDirectory": "build",
+      "specVersion": 3
+    },
+    "routes": {
+      "routesDir": "build"
+    }
   }
