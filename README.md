@@ -8,8 +8,8 @@ npm run build<br>
 npm start
 npm run test 
 
-Other guidelines
-Who do I talk to?
+Other guidelines<br>
+Who do I talk to?<br>
 Repo owner or admin: Gaurav <br>
 Other community or team contact: Surya
 
