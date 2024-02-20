@@ -5,7 +5,7 @@ all the scripts are available as usual npm commands
 
 npm install<br>
 npm run build<br>
-npm start
+npm start<br>
 npm run test 
 
 Other guidelines<br>
