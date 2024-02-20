@@ -10,7 +10,7 @@ npm run test
 
 Other guidelines
 Who do I talk to?
-Repo owner or admin: Gaurav
+Repo owner or admin: Gaurav <br>
 Other community or team contact: Surya
 
 
