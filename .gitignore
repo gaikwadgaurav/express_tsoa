@@ -1,8 +1,16 @@
-# Node.js
+# Node artifact files
 node_modules/
+dist/
+build/
+coverage/
+log/
 
 # TypeScript
 *.tsbuildinfo
 
 # Visual Studio Code
 .vscode/
+
+# tsoa generated files
+src/routes/routes.ts
+api/swagger.json

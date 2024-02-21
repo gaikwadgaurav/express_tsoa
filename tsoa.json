@@ -1,12 +1,16 @@
 {
     "entryFile": "src/index.ts",
-    "noImplicitAdditionalProperties": "throw-on-extras",
-    "controllerPathGlobs": ["src/**/*.controller.ts"],
+    "noImplicitAdditionalProperties": "silently-remove-extras",
+    "controllerPathGlobs": ["src/controllers/**/*.controller.ts"],
     "spec": {
-      "outputDirectory": "build",
-      "specVersion": 3
+      "outputDirectory": "./api",
+      "specVersion": 3,
+      "specMerging": "recursive",
+      "spec": {}
     },
     "routes": {
-      "routesDir": "build"
+      "entryFile": "./src/app.ts",
+      "routesDir": "./src/routes",
+      "middleware": "express"
     }
   }
